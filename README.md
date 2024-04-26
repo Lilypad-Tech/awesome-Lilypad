@@ -1,4 +1,4 @@
-# awesomeLilypad - examples, use cases, and more!
+# awesome-Lilypad - examples, use cases, and more!
 
 Lilypad is developing a serverless, distributed compute network that enables internet-scale data processing, AI, ML & other arbitrary computation from blockchains, while unleashing idle processing power & unlocking a new marketplace for compute.
 
