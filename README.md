@@ -9,10 +9,18 @@
 - [FAQs](https://docs.lilypad.tech/lilypad/faqs)
 - [Lilypad docs](https://docs.lilypad.tech/lilypad)
 - [Quick Start](https://docs.lilypad.tech/lilypad/lilypad-milky-way-testnet/quick-start) - Lilypad "Hello World"
+- [Module Boilerplate](https://github.com/Lilypad-Tech/lilypad-module-boilerplate) - A boilerplate for getting started with building a Lilypad module.
 - [Stable Diffusion](https://docs.lilypad.tech/lilypad/lilypad-milky-way-examples/stable-diffusion-sdxl0.9) - Text to image generation with SDXL v0.9 or v1.0 with tunable options
 - [Stable Diffusion Video](https://docs.lilypad.tech/lilypad/lilypad-milky-way-examples/stable-diffusion-video-sdv1.0-and-1.1) - Text to video generation with SDV 1.0 or v1.1 with tunable option
 - [Smart contract jobs](https://github.com/Lilypad-Tech/lilypad/blob/main/docs/smart-contract-jobs.md) - Trigger jobs on the Lilypad network from a smart contract
 - [Run Lilypad on a client](https://blog.lilypadnetwork.org/setting-up-your-lilypad-front-end) - Integrate Lilypad into a frontend to run a SDXL module to generate images
+
+## Modules
+- [lilysay](https://github.com/Lilypad-Tech/lilypad-module-lilysay)
+- [cowsay](https://github.com/lilypad-tech/lilypad-module-cowsay)
+- [Stable Diffusion XL](https://github.com/Lilypad-Tech/lilypad-module-sdxl-pipeline/)
+- [Stable Diffusion Video](https://github.com/Lilypad-Tech/lilypad-module-sdv-pipeline)
+- [wasm](https://github.com/lilypad-tech/lilypad-module-wasm)
 
 ## Use Cases
 - [Waterlily.ai](https://github.com/Lilypad-Tech/Waterlily) - An ethical generative AI-Art dApp leveraging FVM smart contracts and decentralized edge compute platform Bacalhau
@@ -47,5 +55,3 @@
 - [InferAI](https://github.com/Shubhamai/hackfs2023) - Single click deployment for ML models on a decentralized compute and storage powered by Filecoin Virtual Machine, Bacalhau & Libp2p
 - [TENTAI](https://github.com/debuggingfuture/tentai) - SDK for AI models running on decentralized computing
 
-
- 
