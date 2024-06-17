@@ -5,15 +5,22 @@
 
 [Lilypad](https://lilypad.tech) is developing a serverless, distributed compute network that enables internet-scale data processing, AI, ML & other arbitrary computation from blockchains, while unleashing idle processing power & unlocking a new marketplace for compute.
 
-## Recommended Resources
-- [FAQs](https://docs.lilypad.tech/lilypad/faqs)
-- [Lilypad docs](https://docs.lilypad.tech/lilypad)
-- [Quick Start](https://docs.lilypad.tech/lilypad/lilypad-milky-way-testnet/quick-start) - Lilypad "Hello World"
-- [Module Boilerplate](https://github.com/Lilypad-Tech/lilypad-module-boilerplate) - A boilerplate for getting started with building a Lilypad module.
-- [Stable Diffusion](https://docs.lilypad.tech/lilypad/lilypad-milky-way-examples/stable-diffusion-sdxl0.9) - Text to image generation with SDXL v0.9 or v1.0 with tunable options
-- [Stable Diffusion Video](https://docs.lilypad.tech/lilypad/lilypad-milky-way-examples/stable-diffusion-video-sdv1.0-and-1.1) - Text to video generation with SDV 1.0 or v1.1 with tunable option
-- [Smart contract jobs](https://github.com/Lilypad-Tech/lilypad/blob/main/docs/smart-contract-jobs.md) - Trigger jobs on the Lilypad network from a smart contract
-- [Run Lilypad on a client](https://blog.lilypadnetwork.org/setting-up-your-lilypad-front-end) - Integrate Lilypad into a frontend to run a SDXL module to generate images
+## General
+  - [FAQs](https://docs.lilypad.tech/lilypad/faqs)
+  - [Lilypad docs](https://docs.lilypad.tech/lilypad)
+  - [Quick Start](https://docs.lilypad.tech/lilypad/lilypad-milky-way-testnet/quick-start) - Lilypad "Hello World"
+  - [Module Boilerplate](https://github.com/Lilypad-Tech/lilypad-module-boilerplate) - A boilerplate for getting started with building a Lilypad module
+
+## Resource Providers
+  - [Hardware Requirements](https://docs.lilypad.tech/lilypad/hardware-providers/hardware-requirements) - Hardware requirements for running a Lilypad node
+  - [Running a Lilypad node](https://docs.lilypad.tech/lilypad/hardware-providers/run-a-node) - Instructions on how to run a Lilypad node
+  - [Running a Lilypad node video](https://www.youtube.com/watch?v=YmOtqOIBQ0k) - A short video walkthrough on how to run a Lilypad node
+
+## Developers
+  - [Stable Diffusion](https://docs.lilypad.tech/lilypad/lilypad-milky-way-examples/stable-diffusion-sdxl0.9) - Text to image generation with SDXL v0.9 or v1.0 with tunable options
+  - [Stable Diffusion Video](https://docs.lilypad.tech/lilypad/lilypad-milky-way-examples/stable-diffusion-video-sdv1.0-and-1.1) - Text to video generation with SDV 1.0 or v1.1 with tunable option
+  - [Smart contract jobs](https://github.com/Lilypad-Tech/lilypad/blob/main/docs/smart-contract-jobs.md) - Trigger jobs on the Lilypad network from a smart contract
+  - [Run Lilypad on a client](https://blog.lilypadnetwork.org/setting-up-your-lilypad-front-end) - Integrate Lilypad into a frontend to run a SDXL module to generate images
 
 ## Modules
 - [lilysay](https://github.com/Lilypad-Tech/lilypad-module-lilysay)
