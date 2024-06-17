@@ -54,4 +54,8 @@
 - [Daggle](https://github.com/leostelon/daggle) - A swiss knife for Bacalhau, everything you need in an easily accessible dashboard
 - [InferAI](https://github.com/Shubhamai/hackfs2023) - Single click deployment for ML models on a decentralized compute and storage powered by Filecoin Virtual Machine, Bacalhau & Libp2p
 - [TENTAI](https://github.com/debuggingfuture/tentai) - SDK for AI models running on decentralized computing
-
+- [Rock Paper Ninja](https://github.com/tonynacumoto/rock-paper-ninja) - A web3 take on the classic game of Rock Paper Scissors
+- [Dogtoken ai erc404](https://github.com/lucasespinosa28/dogtoken) - ERC404 token with custom Lilypad stable diffusion to generate unique images for holders
+- [Filecoin ML Engine](https://github.com/Prajjawalk/filecoin-ML-engine) - Onchain ML engine to create dApp ML agents on top of Filecoin
+- [NexTown](https://github.com/DogukanGun/hackfs24-ai-marketplace) - A decentralized AI computation and storage platform allowing users to run AI models via LilyPad
+- [CipherCraft](https://github.com/Shubham-Rasal/CipherCraft) - A decentralized hub for federated model training on access controlled private datasets
