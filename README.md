@@ -32,6 +32,7 @@
 - [wasm](https://github.com/lilypad-tech/lilypad-module-wasm)
 
 ## Use Cases
+- [Lilypad Node Monitoring](https://github.com/rhochmayr/lilypad-rp-monitoring) - Node Monitoring with Uptime Kuma and Telegram Notifications
 - [Waterlily.ai](https://github.com/Lilypad-Tech/Waterlily) - An ethical generative AI-Art dApp leveraging FVM smart contracts and decentralized edge compute platform Bacalhau
 - [Defikicks](https://github.com/md0x/defikicks) - A decentralized, community-governed Data DAO on Filecoin that democratizes DeFi data aggregation and TVL calculations
 - [Lilypad Kamu](https://github.com/polus-arcticus/lilypad-module-kamu/blob/main/lilypad_module.json.tmpl) - Custom Lilypad module for SQL streaming through kamu.dev
@@ -68,4 +69,4 @@
 - [Filecoin ML Engine](https://github.com/Prajjawalk/filecoin-ML-engine) - Onchain ML engine to create dApp ML agents on top of Filecoin
 - [NexTown](https://github.com/DogukanGun/hackfs24-ai-marketplace) - A decentralized AI computation and storage platform allowing users to run AI models via LilyPad
 - [CipherCraft](https://github.com/Shubham-Rasal/CipherCraft) - A decentralized hub for federated model training on access controlled private datasets
-- [Lilypad Node Monitoring](https://github.com/rhochmayr/lilypad-rp-monitoring) - Node Monitoring with Uptime Kuma and Telegram Notifications
+
