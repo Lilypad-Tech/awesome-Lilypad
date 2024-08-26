@@ -17,7 +17,7 @@
   - [Running a Lilypad node](https://docs.lilypad.tech/lilypad/hardware-providers/run-a-node) - Instructions on how to run a Lilypad node
   - [Running a Lilypad node video](https://www.youtube.com/watch?v=YmOtqOIBQ0k) - A short video walkthrough on how to run a Lilypad node
   - [Lilypad Discord](https://lilypad.team/discord) - Join the Discord and ask questions in the "General" or "i-need-help" channels
-  - [WindowsResourceProvider app](https://github.com/Lilypad-Tech/WindowsResourceProvider) - PR's and issues welcome.
+  - [WindowsResourceProvider app](https://github.com/Lilypad-Tech/WindowsResourceProvider) - PR's and issues welcome
   - [WSL Resource Provider setup](https://github.com/rhochmayr/lp-wsl-native-rp) - Feedback welcome!
 
 ## Developers
