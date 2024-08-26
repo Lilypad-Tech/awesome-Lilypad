@@ -17,6 +17,8 @@
   - [Running a Lilypad node](https://docs.lilypad.tech/lilypad/hardware-providers/run-a-node) - Instructions on how to run a Lilypad node
   - [Running a Lilypad node video](https://www.youtube.com/watch?v=YmOtqOIBQ0k) - A short video walkthrough on how to run a Lilypad node
   - [Lilypad Discord](https://lilypad.team/discord) - Join the Discord and ask questions in the "General" or "i-need-help" channels
+  - [WindowsResourceProvider app](https://github.com/Lilypad-Tech/WindowsResourceProvider) - PR's and issues welcome.
+  - [WSL Resource Provider setup](https://github.com/rhochmayr/lp-wsl-native-rp) - Feedback welcome!
 
 ## Developers
   - [Stable Diffusion](https://docs.lilypad.tech/lilypad/lilypad-milky-way-examples/stable-diffusion-sdxl0.9) - Text to image generation with SDXL v0.9 or v1.0 with tunable options
