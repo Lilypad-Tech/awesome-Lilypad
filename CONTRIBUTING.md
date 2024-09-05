@@ -52,6 +52,10 @@ Pull requests should document how to test new features or bug fixes. If we are u
 
 Pull request titles should follow the conventional commit format. We automatically create releases based on the pull request title. Pull requests with `feat:`, `fix:`, or `refactor:` titles will create a release.
 
+### Tests
+
+Please test tooling that is added to this repo. When possible, provide details in the PR that can help others recreate the test that was run.
+
 ### **Commit Squashing**
 
 In most cases, do not squash commits while your pull request is under review. We use a squash and merge strategy when merging pull requests, and we may edit the individual commit messages squashed into the final commit message. The commit history of your initial pull request will remain intact on the pull request page.
