@@ -29,6 +29,8 @@
 ## Modules
 - [lilysay](https://github.com/Lilypad-Tech/lilypad-module-lilysay)
 - [cowsay](https://github.com/lilypad-tech/lilypad-module-cowsay)
+- [Stable Diffusion Turbo Pipeline](https://github.com/noryev/module-sdxl-ipfs)
+- [Llama2](https://github.com/noryev/module-llama2)
 - [Stable Diffusion XL](https://github.com/Lilypad-Tech/lilypad-module-sdxl-pipeline/)
 - [Stable Diffusion Video](https://github.com/Lilypad-Tech/lilypad-module-sdv-pipeline)
 - [wasm](https://github.com/lilypad-tech/lilypad-module-wasm)
