@@ -27,7 +27,7 @@
   - [Run Lilypad on a client](https://blog.lilypadnetwork.org/setting-up-your-lilypad-front-end) - Integrate Lilypad into a frontend to run a SDXL module to generate images
 
 ## Modules
-A list of modules that can run on the Lilypad Network provided by the Lilypad team and community. Modules added to this list from the community have not been tested by the Lilypad team, run these modules at your own risk.
+A list of modules that can run on the Lilypad Network provided by the Lilypad team and community. Modules added to this list from the community have not been tested by the Lilypad team, run these modules at your own risk. Modules created by the Lilypad team are listed in the [Lilypad docs](https://docs.lilypad.tech/lilypad) under "Lilypad Modules"
 - [lilysay](https://github.com/Lilypad-Tech/lilypad-module-lilysay)
 - [cowsay](https://github.com/lilypad-tech/lilypad-module-cowsay)
 - [Stable Diffusion Turbo Pipeline](https://github.com/noryev/module-sdxl-ipfs)
