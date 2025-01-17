@@ -32,6 +32,7 @@
 - [Stable Diffusion Turbo Pipeline](https://github.com/noryev/module-sdxl-ipfs)
 - [Falcon 7b](https://github.com/narbs91/lilypad-falcon-7b-instruct-module)
 - [Llama2](https://github.com/noryev/module-llama2)
+- [Llama3.2 3b](https://github.com/rhochmayr/ollama-llama3.2-3b)
 - [Stable Diffusion Turbo](https://docs.lilypad.tech/lilypad/lilypad-modules/stable-diffusion-turbo-pipeline)
 - [Stable Diffusion XL](https://github.com/Lilypad-Tech/lilypad-module-sdxl-pipeline/)
 - [Stable Diffusion Video](https://github.com/Lilypad-Tech/lilypad-module-sdv-pipeline)
