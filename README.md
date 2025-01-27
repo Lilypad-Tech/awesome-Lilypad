@@ -21,8 +21,8 @@
   - [WSL Resource Provider setup](https://github.com/rhochmayr/lp-wsl-native-rp) - Open-source/experimental. Feedback welcome!
 
 ## Developers
-  - [Stable Diffusion](https://docs.lilypad.tech/lilypad/lilypad-milky-way-examples/stable-diffusion-sdxl0.9) - Text to image generation with SDXL v0.9 or v1.0 with tunable options
-  - [Stable Diffusion Video](https://docs.lilypad.tech/lilypad/lilypad-milky-way-examples/stable-diffusion-video-sdv1.0-and-1.1) - Text to video generation with SDV 1.0 or v1.1 with tunable option
+  - [Lilypad Modules Intro](https://docs.lilypad.tech/lilypad/lilypad-modules/modules-intro)
+  - [Local JS CLI Wrapper API](https://docs.lilypad.tech/lilypad/developer-resources/js-cli-wrapper-local) - Run jobs on the Lilypad network with a locally hosted API.
   - [Smart contract jobs](https://github.com/Lilypad-Tech/lilypad/blob/main/docs/smart-contract-jobs.md) - Trigger jobs on the Lilypad network from a smart contract
   - [Run Lilypad on a client](https://blog.lilypadnetwork.org/setting-up-your-lilypad-front-end) - Integrate Lilypad into a frontend to run a SDXL module to generate images
 
@@ -31,9 +31,9 @@ A list of modules that can run on the Lilypad Network provided by the Lilypad te
 - [lilysay](https://github.com/Lilypad-Tech/lilypad-module-lilysay)
 - [cowsay](https://github.com/lilypad-tech/lilypad-module-cowsay)
 - [Stable Diffusion Turbo Pipeline](https://github.com/noryev/module-sdxl-ipfs)
+- [Stable Diffusion Turbo](https://docs.lilypad.tech/lilypad/lilypad-modules/stable-diffusion-turbo-pipeline)
 - [Falcon 7b](https://github.com/narbs91/lilypad-falcon-7b-instruct-module)
 - [Llama2](https://github.com/noryev/module-llama2)
-- [Stable Diffusion Turbo](https://docs.lilypad.tech/lilypad/lilypad-modules/stable-diffusion-turbo-pipeline)
 - [Stable Diffusion XL](https://github.com/Lilypad-Tech/lilypad-module-sdxl-pipeline/)
 - [Stable Diffusion Video](https://github.com/Lilypad-Tech/lilypad-module-sdv-pipeline)
 - [wasm](https://github.com/lilypad-tech/lilypad-module-wasm)
