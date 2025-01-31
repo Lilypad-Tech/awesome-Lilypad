@@ -35,6 +35,7 @@ A list of modules that can run on the Lilypad Network provided by the Lilypad te
 - [Falcon 7b](https://github.com/narbs91/lilypad-falcon-7b-instruct-module)
 - [Llama2](https://github.com/noryev/module-llama2)
 - [Llama3.2 3b](https://github.com/rhochmayr/ollama-llama3.2-3b)
+- [Qwen2.5-Coder 7b](https://github.com/rhochmayr/ollama-qwen2.5-coder-7b)
 - [Stable Diffusion XL](https://github.com/Lilypad-Tech/lilypad-module-sdxl-pipeline/)
 - [Stable Diffusion Video](https://github.com/Lilypad-Tech/lilypad-module-sdv-pipeline)
 - [wasm](https://github.com/lilypad-tech/lilypad-module-wasm)
