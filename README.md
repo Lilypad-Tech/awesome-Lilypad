@@ -32,6 +32,7 @@ A list of modules that can run on the Lilypad Network provided by the Lilypad te
 - [cowsay](https://github.com/lilypad-tech/lilypad-module-cowsay)
 - [Stable Diffusion Turbo Pipeline](https://github.com/noryev/module-sdxl-ipfs)
 - [Stable Diffusion Turbo](https://docs.lilypad.tech/lilypad/lilypad-modules/stable-diffusion-turbo-pipeline)
+- [DeepSeek-R1 7b](https://github.com/rhochmayr/ollama-deepseek-r1-7b/tree/1.0.0)
 - [Falcon 7b](https://github.com/narbs91/lilypad-falcon-7b-instruct-module)
 - [Llama2](https://github.com/noryev/module-llama2)
 - [Stable Diffusion XL](https://github.com/Lilypad-Tech/lilypad-module-sdxl-pipeline/)
