@@ -27,17 +27,22 @@
   - [Run Lilypad on a client](https://blog.lilypadnetwork.org/setting-up-your-lilypad-front-end) - Integrate Lilypad into a frontend to run a SDXL module to generate images
 
 ## Modules
-A list of modules that can run on the Lilypad Network provided by the Lilypad team and community. Modules added to this list from the community have not been tested by the Lilypad team, run these modules at your own risk. Modules created by the Lilypad team are listed in the [Lilypad docs](https://docs.lilypad.tech/lilypad) under "Lilypad Modules"
-- [lilysay](https://github.com/Lilypad-Tech/lilypad-module-lilysay)
-- [cowsay](https://github.com/lilypad-tech/lilypad-module-cowsay)
-- [Stable Diffusion Turbo Pipeline](https://github.com/noryev/module-sdxl-ipfs)
-- [Stable Diffusion Turbo](https://docs.lilypad.tech/lilypad/lilypad-modules/stable-diffusion-turbo-pipeline)
-- [Falcon 7b](https://github.com/narbs91/lilypad-falcon-7b-instruct-module)
-- [Llama2](https://github.com/noryev/module-llama2)
-- [Llama3.2 3b](https://github.com/rhochmayr/ollama-llama3.2-3b/tree/1.0.0)
-- [Stable Diffusion XL](https://github.com/Lilypad-Tech/lilypad-module-sdxl-pipeline/)
-- [Stable Diffusion Video](https://github.com/Lilypad-Tech/lilypad-module-sdv-pipeline)
-- [wasm](https://github.com/lilypad-tech/lilypad-module-wasm)
+A list of modules that can run on the Lilypad Network provided by the Lilypad team and community. Modules added to this list from the community have not been tested by the Lilypad team, run these modules at your own risk. Modules created by the Lilypad team are listed in the [Lilypad docs](https://docs.lilypad.tech/lilypad) under "Lilypad Modules".
+
+> The [Lilypad CLI](https://docs.lilypad.tech/lilypad/lilypad-testnet/install-run-requirements) is required to run a module
+
+| Module | Example | Variables |
+| -------- | -------- | -------- |
+| [lilysay](https://github.com/Lilypad-Tech/lilypad-module-lilysay) | `lilypad run lilysay:v0.0.4` | `-i Message=""` |
+| [cowsay](https://github.com/lilypad-tech/lilypad-module-cowsay) | `lilypad run cowsay:v0.0.4` | `-i Message=""` |
+| [Stable Diffusion Turbo Pipeline](https://github.com/noryev/module-sdxl-ipfs) | `lilypad run github.com/noryev/module-sdxl-ipfs:main` | `-i prompt=""` |
+| [Stable Diffusion Turbo Pipeline](https://github.com/noryev/module-sdxl-ipfs) | `lilypad run github.com/noryev/module-sdxl-ipfs:main` | `-i prompt=""` |`
+| [Falcon 7b](https://github.com/narbs91/lilypad-falcon-7b-instruct-module) | `lilypad run github.com/narbs91/lilypad-falcon-7b-instruct-module:v1.8.0` | `-i MODEL_INPUT=""` |
+| [Llama2](https://github.com/noryev/module-llama2) | `lilypad run github.com/noryev/module-llama2` | `-i PROMPT=""` |
+| [Llama3.2 3b](https://github.com/rhochmayr/ollama-llama3.2-3b/tree/1.0.0) | `lilypad run github.com/rhochmayr/ollama-llama3.2-3b:1.0.0` | `-i PROMPT=""` |
+| [Stable Diffusion XL](https://github.com/Lilypad-Tech/lilypad-module-sdxl-pipeline/) | `lilypad run sdxl-pipeline:v1.0-base-lilypad3` | `-i Prompt=""` |
+| [Stable Diffusion Video](https://github.com/Lilypad-Tech/lilypad-module-sdv-pipeline) | `lilypad run sdv-pipeline:v1.1-lilypad2` | `-i ImageSeed="" -i Prompt="" -i Steps="" -i VideoSteps=""` |
+| [wasm](https://github.com/lilypad-tech/lilypad-module-wasm) | `lilypad run wasm:main` ||
 
 ## Use Cases
 - [Lilypad Node Monitoring](https://github.com/rhochmayr/lilypad-rp-monitoring) - Node Monitoring with Uptime Kuma and Telegram Notifications
