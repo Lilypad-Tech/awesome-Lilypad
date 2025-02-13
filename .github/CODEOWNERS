@@ -1,0 +1,16 @@
+################################################################
+#
+# List of approvers/reviewers for `awesome-lilypad`
+#
+################################################################
+#
+# Get in touch with us via the Lilypad Community Discord
+#  https://discord.gg/WtHbjMP5UB
+# 
+#
+# Learn about CODEOWNERS file format: 
+#  https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+#
+
+# The default owners for everything in the repo.
+* @DevlinRocha @PBillingsby @galaxyxtwo
