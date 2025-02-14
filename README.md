@@ -30,16 +30,15 @@
 A list of modules that can run on the Lilypad Network provided by the Lilypad team and community. Modules added to this list from the community have not been tested by the Lilypad team, run these modules at your own risk. Modules created by the Lilypad team are listed in the [Lilypad docs](https://docs.lilypad.tech/lilypad) under "Lilypad Modules"
 - [lilysay](https://github.com/Lilypad-Tech/lilypad-module-lilysay)
 - [cowsay](https://github.com/lilypad-tech/lilypad-module-cowsay)
-- [Stable Diffusion Turbo Pipeline](https://github.com/noryev/module-sdxl-ipfs)
 - [Stable Diffusion Turbo](https://docs.lilypad.tech/lilypad/lilypad-modules/stable-diffusion-turbo-pipeline)
-- [DeepSeek-R1 7b](https://github.com/rhochmayr/ollama-deepseek-r1-7b/tree/1.0.0)
-- [Falcon 7b](https://github.com/narbs91/lilypad-falcon-7b-instruct-module)
 - [Llama2](https://github.com/noryev/module-llama2)
+- [Falcon 7b](https://github.com/narbs91/lilypad-falcon-7b-instruct-module)
+
+### Community Modules
+- [DeepSeek-R1 7b](https://github.com/rhochmayr/ollama-deepseek-r1-7b/tree/1.0.0)
 - [Llama3.2 3b](https://github.com/rhochmayr/ollama-llama3.2-3b/tree/1.0.0)
 - [Qwen2.5-Coder 7b](https://github.com/rhochmayr/ollama-qwen2.5-coder-7b/tree/1.0.0)
-- [Stable Diffusion XL](https://github.com/Lilypad-Tech/lilypad-module-sdxl-pipeline/)
-- [Stable Diffusion Video](https://github.com/Lilypad-Tech/lilypad-module-sdv-pipeline)
-- [wasm](https://github.com/lilypad-tech/lilypad-module-wasm)
+
 
 ## Use Cases
 - [Lilypad Node Monitoring](https://github.com/rhochmayr/lilypad-rp-monitoring) - Node Monitoring with Uptime Kuma and Telegram Notifications
