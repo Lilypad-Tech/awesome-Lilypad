@@ -30,7 +30,7 @@
 
 A list of modules that can run on the Lilypad Network, provided by the Lilypad team and community.
 
-> The [Lilypad CLI](https://docs.lilypad.tech/lilypad/lilypad-testnet/install-run-requirements) is required to run a module
+> The [Lilypad CLI](https://docs.lilypad.tech/lilypad/lilypad-testnet/install-run-requirements) is required to run a module.
 
 ### Lilypad Team Modules
 
