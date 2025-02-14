@@ -36,15 +36,13 @@ A list of modules that can run on the Lilypad Network provided by the Lilypad te
 | [lilysay](https://github.com/Lilypad-Tech/lilypad-module-lilysay) | `lilypad run lilysay:v0.0.4` | `-i Message=""` |
 | [cowsay](https://github.com/lilypad-tech/lilypad-module-cowsay) | `lilypad run cowsay:v0.0.4` | `-i Message=""` |
 | [Stable Diffusion Turbo Pipeline](https://github.com/noryev/module-sdxl-ipfs) | `lilypad run github.com/noryev/module-sdxl-ipfs:main` | `-i prompt=""` |
-| [Stable Diffusion Turbo Pipeline](https://github.com/noryev/module-sdxl-ipfs) | `lilypad run github.com/noryev/module-sdxl-ipfs:main` | `-i prompt=""` |`
 | [DeepSeek-R1 7b](https://github.com/rhochmayr/ollama-deepseek-r1-7b/tree/1.0.0) | `lilypad run github.com/rhochmayr/ollama-deepseek-r1-7b:1.0.0` | `-i Prompt=""` |`
 | [Falcon 7b](https://github.com/narbs91/lilypad-falcon-7b-instruct-module) | `lilypad run github.com/narbs91/lilypad-falcon-7b-instruct-module:v1.8.0` | `-i MODEL_INPUT=""` |
 | [Llama2](https://github.com/noryev/module-llama2) | `lilypad run github.com/noryev/module-llama2` | `-i PROMPT=""` |
 | [Llama3.2 3b](https://github.com/rhochmayr/ollama-llama3.2-3b/tree/1.0.0) | `lilypad run github.com/rhochmayr/ollama-llama3.2-3b:1.0.0` | `-i PROMPT=""` |
 | [Qwen2.5-Coder 7b](https://github.com/rhochmayr/ollama-qwen2.5-coder-7b/tree/1.0.0) | `lilypad run https://github.com/rhochmayr/ollama-qwen2.5-coder-7b/tree/1.0.0` | `-i Prompt=""` |
 | [Stable Diffusion XL](https://github.com/Lilypad-Tech/lilypad-module-sdxl-pipeline/) | `lilypad run sdxl-pipeline:v1.0-base-lilypad3` | `-i Prompt=""` |
-| [Stable Diffusion Video](https://github.com/Lilypad-Tech/lilypad-module-sdv-pipeline) | `lilypad run sdv-pipeline:v1.1-lilypad2` | `-i ImageSeed="" -i Prompt="" -i Steps="" -i VideoSteps=""` |
-| [wasm](https://github.com/lilypad-tech/lilypad-module-wasm) | `lilypad run wasm:main` ||
+| [Stable Diffusion Video](https://github.com/Lilypad-Tech/lilypad-module-sdv-pipeline) | `lilypad run sdv-pipeline:v1.1-lilypad2` | `-i ImageSeed="" -i Prompt="" -i Steps="" -i VideoSteps=""` ||
 
 ## Use Cases
 - [Lilypad Node Monitoring](https://github.com/rhochmayr/lilypad-rp-monitoring) - Node Monitoring with Uptime Kuma and Telegram Notifications
