@@ -42,7 +42,7 @@ Modules created by the Lilypad team are listed in the [Lilypad docs](https://doc
 | [cowsay](https://github.com/lilypad-tech/lilypad-module-cowsay) | `lilypad run cowsay:v0.0.4` | `-i Message=""` |
 | [Stable Diffusion Turbo Pipeline](https://github.com/noryev/module-sdxl-ipfs) | `lilypad run github.com/noryev/module-sdxl-ipfs:main` | `-i prompt=""` |
 | [Falcon 7b](https://github.com/narbs91/lilypad-falcon-7b-instruct-module) | `lilypad run github.com/narbs91/lilypad-falcon-7b-instruct-module:v1.8.0` | `-i MODEL_INPUT=""` |
-| [Llama2](https://github.com/noryev/module-llama2) | `lilypad run github.com/noryev/module-llama2` | `-i PROMPT=""` |
+| [Llama2](https://github.com/noryev/module-llama2) | `lilypad run github.com/noryev/module-llama2:main` | `-i PROMPT=""` |
 
 ### Lilypad Community Modules
 
