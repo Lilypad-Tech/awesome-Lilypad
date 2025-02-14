@@ -52,7 +52,7 @@ Modules from the community have not been tested by the Lilypad team. Run these m
 | -------- | -------- | -------- |
 | [DeepSeek-R1 7b](https://github.com/rhochmayr/ollama-deepseek-r1-7b/tree/1.0.0) | `lilypad run github.com/rhochmayr/ollama-deepseek-r1-7b:1.0.0` | `-i Prompt=""` |`
 | [Llama3.2 3b](https://github.com/rhochmayr/ollama-llama3.2-3b/tree/1.0.0) | `lilypad run github.com/rhochmayr/ollama-llama3.2-3b:1.0.0` | `-i PROMPT=""` |
-| [Qwen2.5-Coder 7b](https://github.com/rhochmayr/ollama-qwen2.5-coder-7b/tree/1.0.0) | `lilypad run https://github.com/rhochmayr/ollama-qwen2.5-coder-7b/tree/1.0.0` | `-i Prompt=""` |
+| [Qwen2.5-Coder 7b](https://github.com/rhochmayr/ollama-qwen2.5-coder-7b/tree/1.0.0) | `lilypad run github.com/rhochmayr/ollama-qwen2.5-coder-7b:1.0.0` | `-i Prompt=""` |
 
 ## Use Cases
 - [Lilypad Node Monitoring](https://github.com/rhochmayr/lilypad-rp-monitoring) - Node Monitoring with Uptime Kuma and Telegram Notifications
