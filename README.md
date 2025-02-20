@@ -1,7 +1,6 @@
 # awesome-Lilypad - examples, use cases, and more!
 
-![lilypad](https://github.com/Lilypad-Tech/awesome-Lilypad/assets/90220293/326bd63d-af60-40ed-a186-de0ef2405729)
-
+![lilypad](https://github.com/user-attachments/assets/251033c7-189c-4bb4-97d9-876343dec587)
 
 [Lilypad](https://lilypad.tech) is developing a serverless, distributed compute network that enables internet-scale data processing, AI, ML & other arbitrary computation from blockchains, while unleashing idle processing power & unlocking a new marketplace for compute.
 
