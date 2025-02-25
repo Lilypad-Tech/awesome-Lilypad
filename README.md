@@ -35,7 +35,7 @@ A list of modules that can run on the Lilypad Network, provided by the Lilypad t
 
 Modules created by the Lilypad team are listed in the [Lilypad docs](https://docs.lilypad.tech/lilypad/lilypad-modules/modules-intro) under "Lilypad Modules".
 
-| Module | Example | Variables |
+| Module | Run Command | Variables |
 | -------- | -------- | -------- |
 | [lilysay](https://github.com/Lilypad-Tech/lilypad-module-lilysay) | `lilypad run lilysay:0.5.2` | `-i Message=""` |
 | [cowsay](https://github.com/lilypad-tech/lilypad-module-cowsay) | `lilypad run cowsay:v0.0.4` | `-i Message=""` |
@@ -49,7 +49,7 @@ Modules created by the Lilypad team are listed in the [Lilypad docs](https://doc
 
 Modules from the community have not been tested by the Lilypad team. Run these modules at your own risk.
 
-| Module | Example | Variables |
+| Module | Run Command | Variables |
 | -------- | -------- | -------- |
 | [DeepSeek R1 7B](https://github.com/rhochmayr/ollama-deepseek-r1-7b/tree/1.0.0) | `lilypad run github.com/rhochmayr/ollama-deepseek-r1-7b:1.0.0` | `-i Prompt=""` |`
 | [Llama 3.2 3B](https://github.com/rhochmayr/ollama-llama3.2-3b/tree/1.0.0) | `lilypad run github.com/rhochmayr/ollama-llama3.2-3b:1.0.0` | `-i PROMPT=""` |
