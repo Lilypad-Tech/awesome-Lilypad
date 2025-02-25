@@ -41,7 +41,9 @@ Modules created by the Lilypad team are listed in the [Lilypad docs](https://doc
 | [cowsay](https://github.com/lilypad-tech/lilypad-module-cowsay) | `lilypad run cowsay:v0.0.4` | `-i Message=""` |
 | [Stable Diffusion Turbo Pipeline](https://github.com/noryev/module-sdxl-ipfs) | `lilypad run github.com/noryev/module-sdxl-ipfs:main` | `-i prompt=""` |
 | [DeepSeek R1 1.5B](https://github.com/narbs91/lilypad-ollama-deepseek-r1-1-5b) | `lilypad run github.com/narbs91/lilypad-ollama-deepseek-r1-1-5b:main` | `-i Prompt=""` |
+| [DeepSeek R1 7B](https://github.com/DevlinRocha/lilypad-deepseek-r1-7b) | `lilypad run github.com/DevlinRocha/lilypad-deepseek-r1-7b:main` | `-i prompt=""` `-i temperature="0.7"` `-i max_tokens="2048"` |
 | [Llama 2](https://github.com/noryev/module-llama2) | `lilypad run github.com/noryev/module-llama2:main` | `-i PROMPT=""` |
+| [OpenThinker 7B](https://github.com/DevlinRocha/lilypad-openthinker-7b) | `lilypad run github.com/DevlinRocha/lilypad-openthinker-7b:main` | `-i prompt=""` `-i temperature="0.7"` `-i max_tokens="2048"` |
 
 ### Lilypad Community Modules
 
