@@ -5,25 +5,28 @@
 [Lilypad](https://lilypad.tech) is developing a serverless, distributed compute network that enables internet-scale data processing, AI, ML & other arbitrary computation from blockchains, while unleashing idle processing power & unlocking a new marketplace for compute.
 
 ## General
-  - [FAQs](https://docs.lilypad.tech/lilypad/faqs)
-  - [Lilypad docs](https://docs.lilypad.tech/lilypad)
-  - [Quick Start](https://docs.lilypad.tech/lilypad/lilypad-milky-way-testnet/quick-start) - Lilypad "Hello World"
-  - [Module Boilerplate](https://github.com/Lilypad-Tech/lilypad-module-boilerplate) - A boilerplate for getting started with building a Lilypad module
-  - [Lilypad Discord](https://lilypad.team/discord) - Come ask questions!
+
+- [FAQs](https://docs.lilypad.tech/lilypad/faqs)
+- [Lilypad docs](https://docs.lilypad.tech/lilypad)
+- [Quick Start](https://docs.lilypad.tech/lilypad/lilypad-milky-way-testnet/quick-start) - Lilypad "Hello World"
+- [Module Boilerplate](https://github.com/Lilypad-Tech/lilypad-module-boilerplate) - A boilerplate for getting started with building a Lilypad module
+- [Lilypad Discord](https://lilypad.team/discord) - Come ask questions!
 
 ## Resource Providers
-  - [Hardware Requirements](https://docs.lilypad.tech/lilypad/hardware-providers/hardware-requirements) - Hardware requirements for running a Lilypad node
-  - [Running a Lilypad node](https://docs.lilypad.tech/lilypad/hardware-providers/run-a-node) - Instructions on how to run a Lilypad node
-  - [Running a Lilypad node video](https://www.youtube.com/watch?v=YmOtqOIBQ0k) - A short video walkthrough on how to run a Lilypad node
-  - [Lilypad Discord](https://lilypad.team/discord) - Join the Discord and ask questions in the "General" or "i-need-help" channels
-  - [WindowsResourceProvider app](https://github.com/Lilypad-Tech/WindowsResourceProvider) - Open-source/experimental. PR's and issues welcome
-  - [WSL Resource Provider setup](https://github.com/rhochmayr/lp-wsl-native-rp) - Open-source/experimental. Feedback welcome!
+
+- [Hardware Requirements](https://docs.lilypad.tech/lilypad/hardware-providers/hardware-requirements) - Hardware requirements for running a Lilypad node
+- [Running a Lilypad node](https://docs.lilypad.tech/lilypad/hardware-providers/run-a-node) - Instructions on how to run a Lilypad node
+- [Running a Lilypad node video](https://www.youtube.com/watch?v=YmOtqOIBQ0k) - A short video walkthrough on how to run a Lilypad node
+- [Lilypad Discord](https://lilypad.team/discord) - Join the Discord and ask questions in the "General" or "i-need-help" channels
+- [WindowsResourceProvider app](https://github.com/Lilypad-Tech/WindowsResourceProvider) - Open-source/experimental. PR's and issues welcome
+- [WSL Resource Provider setup](https://github.com/rhochmayr/lp-wsl-native-rp) - Open-source/experimental. Feedback welcome!
 
 ## Developers
-  - [Lilypad Modules Intro](https://docs.lilypad.tech/lilypad/lilypad-modules/modules-intro)
-  - [Local JS CLI Wrapper API](https://docs.lilypad.tech/lilypad/developer-resources/js-cli-wrapper-local) - Run jobs on the Lilypad network with a locally hosted API.
-  - [Smart contract jobs](https://github.com/Lilypad-Tech/lilypad/blob/main/docs/smart-contract-jobs.md) - Trigger jobs on the Lilypad network from a smart contract
-  - [Run Lilypad on a client](https://blog.lilypadnetwork.org/setting-up-your-lilypad-front-end) - Integrate Lilypad into a frontend to run a SDXL module to generate images
+
+- [Lilypad Modules Intro](https://docs.lilypad.tech/lilypad/lilypad-modules/modules-intro)
+- [Local JS CLI Wrapper API](https://docs.lilypad.tech/lilypad/developer-resources/js-cli-wrapper-local) - Run jobs on the Lilypad network with a locally hosted API.
+- [Smart contract jobs](https://github.com/Lilypad-Tech/lilypad/blob/main/docs/smart-contract-jobs.md) - Trigger jobs on the Lilypad network from a smart contract
+- [Run Lilypad on a client](https://blog.lilypadnetwork.org/setting-up-your-lilypad-front-end) - Integrate Lilypad into a frontend to run a SDXL module to generate images
 
 ## Modules
 
@@ -35,26 +38,27 @@ A list of modules that can run on the Lilypad Network, provided by the Lilypad t
 
 Modules created by the Lilypad team are listed in the [Lilypad docs](https://docs.lilypad.tech/lilypad/lilypad-modules/modules-intro) under "Lilypad Modules".
 
-| Module | Run Command | Arguments |
-| -------- | -------- | -------- |
-| [lilysay](https://github.com/Lilypad-Tech/lilypad-module-lilysay) | `lilypad run lilysay:0.5.2` | `-i Message=""` |
-| [cowsay](https://github.com/lilypad-tech/lilypad-module-cowsay) | `lilypad run cowsay:v0.0.4` | `-i Message=""` |
-| [Stable Diffusion Turbo Pipeline](https://github.com/noryev/module-sdxl-ipfs) | `lilypad run github.com/noryev/module-sdxl-ipfs:main` | `-i prompt=""` |
-| [DeepSeek R1 1.5B](https://github.com/narbs91/lilypad-ollama-deepseek-r1-1-5b) | `lilypad run github.com/narbs91/lilypad-ollama-deepseek-r1-1-5b:main` | `-i Prompt=""` |
-| [Phi 4 14B](https://github.com/DevlinRocha/lilypad-phi4-14b) | `lilypad run github.com/DevlinRocha/lilypad-phi4-14b:v0.0.0` | `-i prompt=""` `-i temperature="0.7"` `-i max_tokens="2048"` |
-| [Llama 2](https://github.com/noryev/module-llama2) | `lilypad run github.com/noryev/module-llama2:main` | `-i PROMPT=""` |
+| Module                                                                         | Run Command                                                           | Arguments                                                    |
+| ------------------------------------------------------------------------------ | --------------------------------------------------------------------- | ------------------------------------------------------------ |
+| [lilysay](https://github.com/Lilypad-Tech/lilypad-module-lilysay)              | `lilypad run lilysay:0.5.2`                                           | `-i Message=""`                                              |
+| [cowsay](https://github.com/lilypad-tech/lilypad-module-cowsay)                | `lilypad run cowsay:v0.0.4`                                           | `-i Message=""`                                              |
+| [Stable Diffusion Turbo Pipeline](https://github.com/noryev/module-sdxl-ipfs)  | `lilypad run github.com/noryev/module-sdxl-ipfs:main`                 | `-i prompt=""`                                               |
+| [DeepSeek R1 1.5B](https://github.com/narbs91/lilypad-ollama-deepseek-r1-1-5b) | `lilypad run github.com/narbs91/lilypad-ollama-deepseek-r1-1-5b:main` | `-i Prompt=""`                                               |
+| [Phi 4 14B](https://github.com/DevlinRocha/lilypad-phi4-14b)                   | `lilypad run github.com/DevlinRocha/lilypad-phi4-14b:v0.0.0`          | `-i prompt=""` `-i temperature="0.7"` `-i max_tokens="2048"` |
+| [Llama 2](https://github.com/noryev/module-llama2)                             | `lilypad run github.com/noryev/module-llama2:main`                    | `-i PROMPT=""`                                               |
 
 ### Lilypad Community Modules
 
 Modules from the community have not been tested by the Lilypad team. Run these modules at your own risk.
 
-| Module | Run Command | Arguments |
-| -------- | -------- | -------- |
-| [DeepSeek R1 7B](https://github.com/rhochmayr/ollama-deepseek-r1-7b/tree/1.0.0) | `lilypad run github.com/rhochmayr/ollama-deepseek-r1-7b:1.0.0` | `-i Prompt=""` |`
-| [Llama 3.2 3B](https://github.com/rhochmayr/ollama-llama3.2-3b/tree/1.0.0) | `lilypad run github.com/rhochmayr/ollama-llama3.2-3b:1.0.0` | `-i PROMPT=""` |
+| Module                                                                               | Run Command                                                      | Arguments      |
+| ------------------------------------------------------------------------------------ | ---------------------------------------------------------------- | -------------- |
+| [DeepSeek R1 7B](https://github.com/rhochmayr/ollama-deepseek-r1-7b/tree/1.0.0)      | `lilypad run github.com/rhochmayr/ollama-deepseek-r1-7b:1.0.0`   | `-i Prompt=""` |
+| [Llama 3.2 3B](https://github.com/rhochmayr/ollama-llama3.2-3b/tree/1.0.0)           | `lilypad run github.com/rhochmayr/ollama-llama3.2-3b:1.0.0`      | `-i PROMPT=""` |
 | [Qwen 2.5 Coder 7B](https://github.com/rhochmayr/ollama-qwen2.5-coder-7b/tree/1.0.0) | `lilypad run github.com/rhochmayr/ollama-qwen2.5-coder-7b:1.0.0` | `-i Prompt=""` |
 
 ## Use Cases
+
 - [Lilypad Node Monitoring](https://github.com/rhochmayr/lilypad-rp-monitoring) - Node Monitoring with Uptime Kuma and Telegram Notifications
 - [Waterlily.ai](https://github.com/Lilypad-Tech/Waterlily) - An ethical generative AI-Art dApp leveraging FVM smart contracts and decentralized edge compute platform Bacalhau
 - [Defikicks](https://github.com/md0x/defikicks) - A decentralized, community-governed Data DAO on Filecoin that democratizes DeFi data aggregation and TVL calculations
@@ -92,4 +96,3 @@ Modules from the community have not been tested by the Lilypad team. Run these m
 - [Filecoin ML Engine](https://github.com/Prajjawalk/filecoin-ML-engine) - Onchain ML engine to create dApp ML agents on top of Filecoin
 - [NexTown](https://github.com/DogukanGun/hackfs24-ai-marketplace) - A decentralized AI computation and storage platform allowing users to run AI models via LilyPad
 - [CipherCraft](https://github.com/Shubham-Rasal/CipherCraft) - A decentralized hub for federated model training on access controlled private datasets
-
