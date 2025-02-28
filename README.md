@@ -68,7 +68,10 @@ Additionally, our API modules support the following parameters for the `"options
 <details>
   <summary>Using Our CLI</summary>
 
-> When using the CLI, make sure that you Base64 encode your request.
+1. Replace `GITHUB_USERNAME/MODULE_REPO:TAG` with the "Repo" column from our modules table below.
+2. Replace the `model` field value of your request object with the "Model" column from our modules table below.
+
+> When using our CLI, make sure that you Base64 encode your request.
 
 ```sh
 lilypad run github.com/GITHUB_USERNAME/MODULE_REPO:TAG \
@@ -94,6 +97,9 @@ lilypad run github.com/GITHUB_USERNAME/MODULE_REPO:TAG \
 <details>
   <summary>Using Our API</summary>
 
+1. Replace `YOUR_API_KEY` with your API key from the [Anura website](https://anura.lilypad.tech/).
+2. Replace the `model` field value of your request object with the "Model" column from our modules table below.
+
 ```sh
 curl -X POST "https://anura-testnet.lilypad.tech/api/v1/chat/completions" \
 -H "Content-Type: application/json" \
@@ -117,7 +123,7 @@ curl -X POST "https://anura-testnet.lilypad.tech/api/v1/chat/completions" \
 
 </details>
 
-| Module                                                                    | `"model"` Value     | Repo                                                                                      |
+| Module                                                                    | Model               | Repo                                                                                      |
 | ------------------------------------------------------------------------- | ------------------- | ----------------------------------------------------------------------------------------- |
 | [DeepSeek R1 7B](https://github.com/DevlinRocha/lilypad-deepseek-r1-7b)   | `"deepseek-r1:7b"`  | `github.com/DevlinRocha/lilypad-deepseek-r1-7b:3334fe0d8329c516898a67be0ef656c7492a9d79`  |
 | [Mistral 7B](https://github.com/DevlinRocha/lilypad-mistral-7b)           | `"mistral:7b"`      | `github.com/DevlinRocha/lilypad-mistral-7b:a551c957f4e7e36e7f63c085f3cd3fe742b6e9dc`      |
