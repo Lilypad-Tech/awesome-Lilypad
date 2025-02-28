@@ -36,27 +36,56 @@ A list of modules that can run on the Lilypad Network, provided by the Lilypad t
 
 ### API Compatible Modules
 
-Modules supported by the Lilypad API are also usable with our CLI, but they take inputs differently.
+Modules supported by the Lilypad API are also compatible with our CLI, but the structure of the request is different.
+
+Additionally, our API modules support the following parameters for the `"options"` field of the request:
+
+<details>
+<summary>Options Parameters</summary>
+
+#### Valid Options Parameters and Default Values
+
+- [Ollama Modelfile](https://github.com/ollama/ollama/blob/main/docs/modelfile.md#valid-parameters-and-values)
+
+| Parameter      | Description                                                                                                                                                                                                                                                                                                                                                 | Default |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| mirostat       | Enable Mirostat sampling for controlling perplexity. (0 = disabled, 1 = Mirostat, 2 = Mirostat 2.0)                                                                                                                                                                                                                                                         | `0`     |
+| mirostat_eta   | Influences how quickly the algorithm responds to feedback from the generated text. A lower learning rate will result in slower adjustments, while a higher learning rate will make the algorithm more responsive.                                                                                                                                           | `0.1`   |
+| mirostat_tau   | Controls the balance between coherence and diversity of the output. A lower value will result in more focused and coherent text.                                                                                                                                                                                                                            | `5`     |
+| num_ctx        | Sets the size of the context window used to generate the next token.                                                                                                                                                                                                                                                                                        | `2048`  |
+| repeat_last_n  | Sets how far back for the model to look back to prevent repetition. (0 = disabled, -1 = num_ctx)                                                                                                                                                                                                                                                            | `64`    |
+| repeat_penalty | Sets how strongly to penalize repetitions. A higher value (e.g., 1.5) will penalize repetitions more strongly, while a lower value (e.g., 0.9) will be more lenient.                                                                                                                                                                                        | `1.1`   |
+| temperature    | The temperature of the model. Increasing the temperature will make the model answer more creatively.                                                                                                                                                                                                                                                        | `0.8`   |
+| seed           | Sets the random number seed to use for generation. Setting this to a specific number will make the model generate the same text for the same prompt.                                                                                                                                                                                                        | `0`     |
+| stop           | Sets the stop sequences to use. When this pattern is encountered the LLM will stop generating text and return. Multiple stop patterns may be set by specifying multiple separate stop parameters in a modelfile.                                                                                                                                            |         |
+| num_predict    | Maximum number of tokens to predict when generating text. (-1 = infinite generation)                                                                                                                                                                                                                                                                        | `-1`    |
+| top_k          | Reduces the probability of generating nonsense. A higher value (e.g. 100) will give more diverse answers, while a lower value (e.g. 10) will be more conservative.                                                                                                                                                                                          | `40`    |
+| top_p          | Works together with top-k. A higher value (e.g., 0.95) will lead to more diverse text, while a lower value (e.g., 0.5) will generate more focused and conservative text.                                                                                                                                                                                    | `0.9`   |
+| min_p          | Alternative to the top_p, and aims to ensure a balance of quality and variety. The parameter p represents the minimum probability for a token to be considered, relative to the probability of the most likely token. For example, with p=0.05 and the most likely token having a probability of 0.9, logits with a value less than 0.045 are filtered out. | `0.0`   |
+
+</details>
 
 <details>
   <summary>Using Our CLI</summary>
 
+> When using the CLI, make sure that you Base64 encode your request.
+
 ```sh
 lilypad run github.com/GITHUB_USERNAME/MODULE_REPO:TAG \
 -i request="$(echo -n '{
-"model": "MODEL_NAME:MODEL_VERSION",
-"messages": [{
-  "role": "system",
-  "content": "you are a helpful AI assistant"
-},
-{
+  "model": "MODEL_NAME:MODEL_VERSION",
+  "messages": [{
+    "role": "system",
+    "content": "you are a helpful AI assistant"
+  },
+  {
   "role": "user",
   "content": "what is the animal order of the frog?"
-}],
-"stream": false,
-"options": {
-  "temperature": 1.0
-}
+  }],
+  "stream": false,
+  "options": {
+    "temperature": 1.0
+  }
 }' | base64 -w 0)"
 ```
 
@@ -71,15 +100,18 @@ curl -X POST "https://anura-testnet.lilypad.tech/api/v1/chat/completions" \
 -H "Accept: text/event-stream" \
 -H "Authorization: Bearer YOUR_API_KEY" \
 -d '{
-  "model": "llama2:7b",
-    "messages": [
-        {
-            "role": "user",
-            "content": "write a haiku about lilypads"
-        }
-    ],
-    "max_tokens": 2048,
-    "temperature": 0.7
+  "model": "MODEL_NAME:MODEL_VERSION",
+  "messages": [{
+    "role": "system",
+    "content": "you are a helpful AI assistant"
+  },
+  {
+    "role": "user",
+    "content": "what is the animal order of the frog?"
+  }],
+  "options": {
+    "temperature": 1.0
+  }
 }'
 ```
 
