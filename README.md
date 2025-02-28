@@ -34,18 +34,77 @@ A list of modules that can run on the Lilypad Network, provided by the Lilypad t
 
 > The [Lilypad CLI](https://docs.lilypad.tech/lilypad/lilypad-testnet/install-run-requirements) is required to run a module.
 
+### API Compatible Modules
+
+Modules supported by the Lilypad API are also usable with our CLI, but they take inputs differently.
+
+<details>
+  <summary>Using Our CLI</summary>
+
+```sh
+lilypad run github.com/GITHUB_USERNAME/MODULE_REPO:TAG \
+-i request="$(echo -n '{
+"model": "MODEL_NAME:MODEL_VERSION",
+"messages": [{
+  "role": "system",
+  "content": "you are a helpful AI assistant"
+},
+{
+  "role": "user",
+  "content": "what is the animal order of the frog?"
+}],
+"stream": false,
+"options": {
+  "temperature": 1.0
+}
+}' | base64 -w 0)"
+```
+
+</details>
+
+<details>
+  <summary>Using Our API</summary>
+
+```sh
+curl -X POST "https://anura-testnet.lilypad.tech/api/v1/chat/completions" \
+-H "Content-Type: application/json" \
+-H "Accept: text/event-stream" \
+-H "Authorization: Bearer YOUR_API_KEY" \
+-d '{
+  "model": "llama2:7b",
+    "messages": [
+        {
+            "role": "user",
+            "content": "write a haiku about lilypads"
+        }
+    ],
+    "max_tokens": 2048,
+    "temperature": 0.7
+}'
+```
+
+</details>
+
+| Module                                                                    | Run Command                                                                                           |
+| ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| [DeepSeek R1 7B](https://github.com/DevlinRocha/lilypad-deepseek-r1-7b)   | `lilypad run github.com/DevlinRocha/lilypad-deepseek-r1-7b:3334fe0d8329c516898a67be0ef656c7492a9d79`  |
+| [Mistral 7B](https://github.com/DevlinRocha/lilypad-mistral-7b)           | `lilypad run github.com/DevlinRocha/lilypad-mistral-7b:a551c957f4e7e36e7f63c085f3cd3fe742b6e9dc`      |
+| [Phi-4 14B](https://github.com/DevlinRocha/lilypad-phi4-14b)              | `lilypad run github.com/DevlinRocha/lilypad-phi4-14b:adf49d85cf9825a2386d91eccd910dbfe44e2499`        |
+| [Llava 7B](https://github.com/DevlinRocha/lilypad-llava-7b)               | `lilypad run github.com/DevlinRocha/lilypad-llava-7b:2ee3bf637ce19eff52aa2bd79ad449d70e092119`        |
+| [DeepScaleR 1.5B](https://github.com/DevlinRocha/lilypad-deepscaler-1.5b) | `lilypad run github.com/DevlinRocha/lilypad-deepscaler-1.5b:226a58eba382de7df176ea51eb2b8317973be49c` |
+| [OpenThinker 7B](https://github.com/DevlinRocha/lilypad-openthinker-7b)   | `lilypad run github.com/DevlinRocha/lilypad-openthinker-7b:0504f41d60f7cff74d3568557a998bd1b7d6205f`  |
+
 ### Lilypad Team Modules
 
 Modules created by the Lilypad team are listed in the [Lilypad docs](https://docs.lilypad.tech/lilypad/lilypad-modules/modules-intro) under "Lilypad Modules".
 
-| Module                                                                         | Run Command                                                           | Arguments                                                    |
-| ------------------------------------------------------------------------------ | --------------------------------------------------------------------- | ------------------------------------------------------------ |
-| [lilysay](https://github.com/Lilypad-Tech/lilypad-module-lilysay)              | `lilypad run lilysay:0.5.2`                                           | `-i Message=""`                                              |
-| [cowsay](https://github.com/lilypad-tech/lilypad-module-cowsay)                | `lilypad run cowsay:v0.0.4`                                           | `-i Message=""`                                              |
-| [Stable Diffusion Turbo Pipeline](https://github.com/noryev/module-sdxl-ipfs)  | `lilypad run github.com/noryev/module-sdxl-ipfs:main`                 | `-i prompt=""`                                               |
-| [DeepSeek R1 1.5B](https://github.com/narbs91/lilypad-ollama-deepseek-r1-1-5b) | `lilypad run github.com/narbs91/lilypad-ollama-deepseek-r1-1-5b:main` | `-i Prompt=""`                                               |
-| [Phi 4 14B](https://github.com/DevlinRocha/lilypad-phi4-14b)                   | `lilypad run github.com/DevlinRocha/lilypad-phi4-14b:v0.0.0`          | `-i prompt=""` `-i temperature="0.7"` `-i max_tokens="2048"` |
-| [Llama 2](https://github.com/noryev/module-llama2)                             | `lilypad run github.com/noryev/module-llama2:main`                    | `-i PROMPT=""`                                               |
+| Module                                                                         | Run Command                                                           | Arguments       |
+| ------------------------------------------------------------------------------ | --------------------------------------------------------------------- | --------------- |
+| [lilysay](https://github.com/Lilypad-Tech/lilypad-module-lilysay)              | `lilypad run lilysay:0.5.2`                                           | `-i Message=""` |
+| [cowsay](https://github.com/lilypad-tech/lilypad-module-cowsay)                | `lilypad run cowsay:v0.0.4`                                           | `-i Message=""` |
+| [Stable Diffusion Turbo Pipeline](https://github.com/noryev/module-sdxl-ipfs)  | `lilypad run github.com/noryev/module-sdxl-ipfs:main`                 | `-i prompt=""`  |
+| [DeepSeek R1 1.5B](https://github.com/narbs91/lilypad-ollama-deepseek-r1-1-5b) | `lilypad run github.com/narbs91/lilypad-ollama-deepseek-r1-1-5b:main` | `-i Prompt=""`  |
+| [Llama 2](https://github.com/noryev/module-llama2)                             | `lilypad run github.com/noryev/module-llama2:main`                    | `-i PROMPT=""`  |
 
 ### Lilypad Community Modules
 
@@ -96,3 +155,7 @@ Modules from the community have not been tested by the Lilypad team. Run these m
 - [Filecoin ML Engine](https://github.com/Prajjawalk/filecoin-ML-engine) - Onchain ML engine to create dApp ML agents on top of Filecoin
 - [NexTown](https://github.com/DogukanGun/hackfs24-ai-marketplace) - A decentralized AI computation and storage platform allowing users to run AI models via LilyPad
 - [CipherCraft](https://github.com/Shubham-Rasal/CipherCraft) - A decentralized hub for federated model training on access controlled private datasets
+
+```
+
+```
