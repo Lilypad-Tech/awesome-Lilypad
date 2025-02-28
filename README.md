@@ -117,14 +117,14 @@ curl -X POST "https://anura-testnet.lilypad.tech/api/v1/chat/completions" \
 
 </details>
 
-| Module                                                                    | Run Command                                                                                           |
-| ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| [DeepSeek R1 7B](https://github.com/DevlinRocha/lilypad-deepseek-r1-7b)   | `lilypad run github.com/DevlinRocha/lilypad-deepseek-r1-7b:3334fe0d8329c516898a67be0ef656c7492a9d79`  |
-| [Mistral 7B](https://github.com/DevlinRocha/lilypad-mistral-7b)           | `lilypad run github.com/DevlinRocha/lilypad-mistral-7b:a551c957f4e7e36e7f63c085f3cd3fe742b6e9dc`      |
-| [Phi-4 14B](https://github.com/DevlinRocha/lilypad-phi4-14b)              | `lilypad run github.com/DevlinRocha/lilypad-phi4-14b:adf49d85cf9825a2386d91eccd910dbfe44e2499`        |
-| [Llava 7B](https://github.com/DevlinRocha/lilypad-llava-7b)               | `lilypad run github.com/DevlinRocha/lilypad-llava-7b:2ee3bf637ce19eff52aa2bd79ad449d70e092119`        |
-| [DeepScaleR 1.5B](https://github.com/DevlinRocha/lilypad-deepscaler-1.5b) | `lilypad run github.com/DevlinRocha/lilypad-deepscaler-1.5b:226a58eba382de7df176ea51eb2b8317973be49c` |
-| [OpenThinker 7B](https://github.com/DevlinRocha/lilypad-openthinker-7b)   | `lilypad run github.com/DevlinRocha/lilypad-openthinker-7b:0504f41d60f7cff74d3568557a998bd1b7d6205f`  |
+| Module                                                                    | `"model"` Request Value | Repo                                                                                      |
+| ------------------------------------------------------------------------- | ----------------------- | ----------------------------------------------------------------------------------------- |
+| [DeepSeek R1 7B](https://github.com/DevlinRocha/lilypad-deepseek-r1-7b)   | `"deepseek-r1:7b"`      | `github.com/DevlinRocha/lilypad-deepseek-r1-7b:3334fe0d8329c516898a67be0ef656c7492a9d79`  |
+| [Mistral 7B](https://github.com/DevlinRocha/lilypad-mistral-7b)           | `"mistral:7b"`          | `github.com/DevlinRocha/lilypad-mistral-7b:a551c957f4e7e36e7f63c085f3cd3fe742b6e9dc`      |
+| [Phi-4 14B](https://github.com/DevlinRocha/lilypad-phi4-14b)              | `"phi4:14b"`            | `github.com/DevlinRocha/lilypad-phi4-14b:adf49d85cf9825a2386d91eccd910dbfe44e2499`        |
+| [Llava 7B](https://github.com/DevlinRocha/lilypad-llava-7b)               | `"llava:7b"`            | `github.com/DevlinRocha/lilypad-llava-7b:2ee3bf637ce19eff52aa2bd79ad449d70e092119`        |
+| [DeepScaleR 1.5B](https://github.com/DevlinRocha/lilypad-deepscaler-1.5b) | `"deepscaler:1.5b"`     | `github.com/DevlinRocha/lilypad-deepscaler-1.5b:226a58eba382de7df176ea51eb2b8317973be49c` |
+| [OpenThinker 7B](https://github.com/DevlinRocha/lilypad-openthinker-7b)   | `"openthinker:7b"`      | `github.com/DevlinRocha/lilypad-openthinker-7b:0504f41d60f7cff74d3568557a998bd1b7d6205f`  |
 
 ### Lilypad Team Modules
 
