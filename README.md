@@ -48,7 +48,7 @@ Modules supported by the Lilypad API are also compatible with our CLI.
 | [OpenThinker 7B](https://github.com/DevlinRocha/lilypad-openthinker-7b)   | `"openthinker:7b"`  | `github.com/DevlinRocha/lilypad-openthinker-7b:0504f41d60f7cff74d3568557a998bd1b7d6205f`  |
 
 <details>
-  <summary>Using Our API</summary>
+  <summary>Use With Our API</summary>
 
 1. Replace `YOUR_API_KEY` with your API key from the [Anura website](https://anura.lilypad.tech/).
 2. Replace the `model` field value of your request object with the "Model" column from our modules table below.
@@ -75,7 +75,7 @@ curl -X POST "https://anura-testnet.lilypad.tech/api/v1/chat/completions" \
 </details>
 
 <details>
-  <summary>Using Our CLI</summary>
+  <summary>Use With Our CLI</summary>
 
 1. Replace `GITHUB_USERNAME/MODULE_REPO:TAG` with the "Repo" column from our modules table below.
 2. Replace the `model` field value of your request object with the "Model" column from our modules table below.
@@ -100,16 +100,23 @@ lilypad run github.com/GITHUB_USERNAME/MODULE_REPO:TAG \
 
 </details>
 
-Additionally, our API modules support the following parameters for the `"options"` field of the request:
+#### Request Fields
+
+| Field      | Description                                                                 | Type     |
+| ---------- | --------------------------------------------------------------------------- | -------- |
+| `model`    | Model ID used to generate the response (e.g. deepseek-r1:7b). **Required**. | `string` |
+| `messages` | A list of messages comprising the conversation so far. **Required**.        | `array`  |
 
 <details>
-<summary>Optional Parameters</summary>
+<summary>Optional Fields</summary>
 
-### Optional Parameters and Default Values
+##### Optional Fields and Default Values
+
+Our API modules support the following optional fields for the request.
 
 - [Create chat completion](https://platform.openai.com/docs/api-reference/chat/create)
 
-| Parameter           | Description                                                                                                                                                                                                                                                                                                 | Default |
+| Field               | Description                                                                                                                                                                                                                                                                                                 | Default |
 | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | `frequency_penalty` | Number between `-2.0` and `2.0`. Positive values penalize new tokens based on their existing frequency in the text so far, decreasing the model's likelihood to repeat the same line verbatim.                                                                                                              | `0`     |
 | `max_tokens`        | The maximum number of tokens that can be generated in the chat completion.                                                                                                                                                                                                                                  |         |
@@ -121,6 +128,7 @@ Additionally, our API modules support the following parameters for the `"options
 | `stream_options`    | Options for streaming response. Only set this when you set `stream: true`. [Learn more](https://platform.openai.com/docs/api-reference/chat/create#chat-create-stream_options).                                                                                                                             | `null`  |
 | `temperature`       | What sampling temperature to use, between `0` and `2`. Higher values like `0.8` will make the output more random, while lower values like `0.2` will make it more focused and deterministic. We recommend altering this or `top_p` but not both.                                                            | `1`     |
 | `top_p`             | An alternative to sampling with `temperature`, called nucleus sampling, where the model considers the results of the tokens with `top_p` probability mass. So `0.1` means only the tokens comprising the top 10% probability mass are considered. We recommend altering this or `temperature` but not both. | `1`     |
+| `tools`             | A list of tools the model may call. Currently, only functions are supported as a tool. Use this to provide a list of functions the model may generate JSON inputs for. A max of 128 functions are supported. [Learn more](https://platform.openai.com/docs/api-reference/chat/create#chat-create-tools).    |         |
 
 </details>
 
