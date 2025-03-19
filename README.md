@@ -18,8 +18,6 @@
 - [Running a Lilypad node](https://docs.lilypad.tech/lilypad/hardware-providers/run-a-node) - Instructions on how to run a Lilypad node
 - [Running a Lilypad node video](https://www.youtube.com/watch?v=YmOtqOIBQ0k) - A short video walkthrough on how to run a Lilypad node
 - [Lilypad Discord](https://lilypad.team/discord) - Join the Discord and ask questions in the "General" or "i-need-help" channels
-- [WindowsResourceProvider app](https://github.com/Lilypad-Tech/WindowsResourceProvider) - Open-source/experimental. PR's and issues welcome
-- [WSL Resource Provider setup](https://github.com/rhochmayr/lp-wsl-native-rp) - Open-source/experimental. Feedback welcome!
 
 ## Developers
 
@@ -27,6 +25,7 @@
 - [Local JS CLI Wrapper API](https://docs.lilypad.tech/lilypad/developer-resources/js-cli-wrapper-local) - Run jobs on the Lilypad network with a locally hosted API.
 - [Smart contract jobs](https://github.com/Lilypad-Tech/lilypad/blob/main/docs/smart-contract-jobs.md) - Trigger jobs on the Lilypad network from a smart contract
 - [Run Lilypad on a client](https://blog.lilypadnetwork.org/setting-up-your-lilypad-front-end) - Integrate Lilypad into a frontend to run a SDXL module to generate images
+- [create-lilypad-module](https://docs.lilypad.tech/lilypad/developer-resources/create-lilypad-module) - Scaffolding tool for building Lilypad modules
 
 ## Modules
 
@@ -156,6 +155,12 @@ Modules from the community have not been tested by the Lilypad team. Run these m
 
 ## Use Cases
 
+- AI Oncologist Agent - AI agent for oncology research and diagnostics
+  - [Video](https://www.youtube.com/watch?v=5Hq3lUobrN4)
+  - [Code](https://github.com/mavericb/ai-oncologist)
+- [Llama3 Chatbot](https://docs.lilypad.tech/lilypad/use-cases/lilypad-llama3-chatbot) - AI conversations powered by Llama 3 on Lilypad
+- [RAG Support Agent](https://docs.lilypad.tech/lilypad/use-cases/rag-support-agent) - AI-powered agent that retrieves and summarizes relevant information
+- [VS Code Helper Extension](https://docs.lilypad.tech/lilypad/use-cases/vs-code-helper-extension) - AI-powered code assistance
 - [Lilypad Node Monitoring](https://github.com/rhochmayr/lilypad-rp-monitoring) - Node Monitoring with Uptime Kuma and Telegram Notifications
 - [Waterlily.ai](https://github.com/Lilypad-Tech/Waterlily) - An ethical generative AI-Art dApp leveraging FVM smart contracts and decentralized edge compute platform Bacalhau
 - [Defikicks](https://github.com/md0x/defikicks) - A decentralized, community-governed Data DAO on Filecoin that democratizes DeFi data aggregation and TVL calculations
