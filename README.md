@@ -36,32 +36,41 @@ A list of modules that can run on the Lilypad Network, provided by the Lilypad t
 
 ### API Compatible Modules
 
-Modules supported by the Lilypad API are also compatible with our CLI, but the structure of the request is different.
+Modules supported by the Lilypad API are also compatible with our CLI.
 
-Additionally, our API modules support the following parameters for the `"options"` field of the request:
+| Module                                                                    | Model               | Repo                                                                                      |
+| ------------------------------------------------------------------------- | ------------------- | ----------------------------------------------------------------------------------------- |
+| [DeepSeek R1 7B](https://github.com/DevlinRocha/lilypad-deepseek-r1-7b)   | `"deepseek-r1:7b"`  | `github.com/DevlinRocha/lilypad-deepseek-r1-7b:3334fe0d8329c516898a67be0ef656c7492a9d79`  |
+| [Mistral 7B](https://github.com/DevlinRocha/lilypad-mistral-7b)           | `"mistral:7b"`      | `github.com/DevlinRocha/lilypad-mistral-7b:a551c957f4e7e36e7f63c085f3cd3fe742b6e9dc`      |
+| [Phi-4 14B](https://github.com/DevlinRocha/lilypad-phi4-14b)              | `"phi4:14b"`        | `github.com/DevlinRocha/lilypad-phi4-14b:adf49d85cf9825a2386d91eccd910dbfe44e2499`        |
+| [Llava 7B](https://github.com/DevlinRocha/lilypad-llava-7b)               | `"llava:7b"`        | `github.com/DevlinRocha/lilypad-llava-7b:2ee3bf637ce19eff52aa2bd79ad449d70e092119`        |
+| [DeepScaleR 1.5B](https://github.com/DevlinRocha/lilypad-deepscaler-1.5b) | `"deepscaler:1.5b"` | `github.com/DevlinRocha/lilypad-deepscaler-1.5b:226a58eba382de7df176ea51eb2b8317973be49c` |
+| [OpenThinker 7B](https://github.com/DevlinRocha/lilypad-openthinker-7b)   | `"openthinker:7b"`  | `github.com/DevlinRocha/lilypad-openthinker-7b:0504f41d60f7cff74d3568557a998bd1b7d6205f`  |
 
 <details>
-<summary>Options Parameters</summary>
+  <summary>Using Our API</summary>
 
-#### Valid Options Parameters and Default Values
+1. Replace `YOUR_API_KEY` with your API key from the [Anura website](https://anura.lilypad.tech/).
+2. Replace the `model` field value of your request object with the "Model" column from our modules table below.
 
-- [Ollama Modelfile](https://github.com/ollama/ollama/blob/main/docs/modelfile.md#valid-parameters-and-values)
-
-| Parameter      | Description                                                                                                                                                                                                                                                                                                                                                 | Default |
-| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| mirostat       | Enable Mirostat sampling for controlling perplexity. (0 = disabled, 1 = Mirostat, 2 = Mirostat 2.0)                                                                                                                                                                                                                                                         | `0`     |
-| mirostat_eta   | Influences how quickly the algorithm responds to feedback from the generated text. A lower learning rate will result in slower adjustments, while a higher learning rate will make the algorithm more responsive.                                                                                                                                           | `0.1`   |
-| mirostat_tau   | Controls the balance between coherence and diversity of the output. A lower value will result in more focused and coherent text.                                                                                                                                                                                                                            | `5`     |
-| num_ctx        | Sets the size of the context window used to generate the next token.                                                                                                                                                                                                                                                                                        | `2048`  |
-| repeat_last_n  | Sets how far back for the model to look back to prevent repetition. (0 = disabled, -1 = num_ctx)                                                                                                                                                                                                                                                            | `64`    |
-| repeat_penalty | Sets how strongly to penalize repetitions. A higher value (e.g., 1.5) will penalize repetitions more strongly, while a lower value (e.g., 0.9) will be more lenient.                                                                                                                                                                                        | `1.1`   |
-| temperature    | The temperature of the model. Increasing the temperature will make the model answer more creatively.                                                                                                                                                                                                                                                        | `0.8`   |
-| seed           | Sets the random number seed to use for generation. Setting this to a specific number will make the model generate the same text for the same prompt.                                                                                                                                                                                                        | `0`     |
-| stop           | Sets the stop sequences to use. When this pattern is encountered the LLM will stop generating text and return. Multiple stop patterns may be set by specifying multiple separate stop parameters in a modelfile.                                                                                                                                            |         |
-| num_predict    | Maximum number of tokens to predict when generating text. (-1 = infinite generation)                                                                                                                                                                                                                                                                        | `-1`    |
-| top_k          | Reduces the probability of generating nonsense. A higher value (e.g. 100) will give more diverse answers, while a lower value (e.g. 10) will be more conservative.                                                                                                                                                                                          | `40`    |
-| top_p          | Works together with top-k. A higher value (e.g., 0.95) will lead to more diverse text, while a lower value (e.g., 0.5) will generate more focused and conservative text.                                                                                                                                                                                    | `0.9`   |
-| min_p          | Alternative to the top_p, and aims to ensure a balance of quality and variety. The parameter p represents the minimum probability for a token to be considered, relative to the probability of the most likely token. For example, with p=0.05 and the most likely token having a probability of 0.9, logits with a value less than 0.045 are filtered out. | `0.0`   |
+```sh
+curl -X POST "https://anura-testnet.lilypad.tech/api/v1/chat/completions" \
+-H "Content-Type: application/json" \
+-H "Accept: text/event-stream" \
+-H "Authorization: Bearer YOUR_API_KEY" \
+-d '{
+  "model": "MODEL_NAME:MODEL_VERSION",
+  "messages": [{
+    "role": "system",
+    "content": "you are a helpful AI assistant"
+  },
+  {
+    "role": "user",
+    "content": "what order do frogs belong to?"
+  }],
+  "temperature": 0.6
+}'
+```
 
 </details>
 
@@ -91,41 +100,29 @@ lilypad run github.com/GITHUB_USERNAME/MODULE_REPO:TAG \
 
 </details>
 
+Additionally, our API modules support the following parameters for the `"options"` field of the request:
+
 <details>
-  <summary>Using Our API</summary>
+<summary>Optional Parameters</summary>
 
-1. Replace `YOUR_API_KEY` with your API key from the [Anura website](https://anura.lilypad.tech/).
-2. Replace the `model` field value of your request object with the "Model" column from our modules table below.
+### Optional Parameters and Default Values
 
-```sh
-curl -X POST "https://anura-testnet.lilypad.tech/api/v1/chat/completions" \
--H "Content-Type: application/json" \
--H "Accept: text/event-stream" \
--H "Authorization: Bearer YOUR_API_KEY" \
--d '{
-  "model": "MODEL_NAME:MODEL_VERSION",
-  "messages": [{
-    "role": "system",
-    "content": "you are a helpful AI assistant"
-  },
-  {
-    "role": "user",
-    "content": "what order do frogs belong to?"
-  }],
-  "temperature": 0.6
-}'
-```
+- [Create chat completion](https://platform.openai.com/docs/api-reference/chat/create)
+
+| Parameter           | Description                                                                                                                                                                                                                                                                                                 | Default |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| `frequency_penalty` | Number between `-2.0` and `2.0`. Positive values penalize new tokens based on their existing frequency in the text so far, decreasing the model's likelihood to repeat the same line verbatim.                                                                                                              | `0`     |
+| `max_tokens`        | The maximum number of tokens that can be generated in the chat completion.                                                                                                                                                                                                                                  |         |
+| `presence_penalty`  | Number between `-2.0` and `2.0`. Positive values penalize new tokens based on whether they appear in the text so far, increasing the model's likelihood to talk about new topics.                                                                                                                           | `0`     |
+| `response_format`   | An object specifying the format that the model must output. [Learn more](https://platform.openai.com/docs/api-reference/chat/create#chat-create-response_format).                                                                                                                                           |         |
+| `seed`              | Makes a best effort to sample deterministically, such that repeated requests with the same `seed` and parameters should return the same result. Determinism is not guaranteed, and you should refer to the `system_fingerprint` response parameter to monitor changes in the backend.                       |         |
+| `stop`              | Up to 4 sequences where the API will stop generating further tokens. The returned text will not contain the stop sequence.                                                                                                                                                                                  | `null`  |
+| `stream`            | If set to true, the model response data will be streamed to the client as it is generated using server-sent events.                                                                                                                                                                                         | `false` |
+| `stream_options`    | Options for streaming response. Only set this when you set `stream: true`. [Learn more](https://platform.openai.com/docs/api-reference/chat/create#chat-create-stream_options).                                                                                                                             | `null`  |
+| `temperature`       | What sampling temperature to use, between `0` and `2`. Higher values like `0.8` will make the output more random, while lower values like `0.2` will make it more focused and deterministic. We recommend altering this or `top_p` but not both.                                                            | `1`     |
+| `top_p`             | An alternative to sampling with `temperature`, called nucleus sampling, where the model considers the results of the tokens with `top_p` probability mass. So `0.1` means only the tokens comprising the top 10% probability mass are considered. We recommend altering this or `temperature` but not both. | `1`     |
 
 </details>
-
-| Module                                                                    | Model               | Repo                                                                                      |
-| ------------------------------------------------------------------------- | ------------------- | ----------------------------------------------------------------------------------------- |
-| [DeepSeek R1 7B](https://github.com/DevlinRocha/lilypad-deepseek-r1-7b)   | `"deepseek-r1:7b"`  | `github.com/DevlinRocha/lilypad-deepseek-r1-7b:3334fe0d8329c516898a67be0ef656c7492a9d79`  |
-| [Mistral 7B](https://github.com/DevlinRocha/lilypad-mistral-7b)           | `"mistral:7b"`      | `github.com/DevlinRocha/lilypad-mistral-7b:a551c957f4e7e36e7f63c085f3cd3fe742b6e9dc`      |
-| [Phi-4 14B](https://github.com/DevlinRocha/lilypad-phi4-14b)              | `"phi4:14b"`        | `github.com/DevlinRocha/lilypad-phi4-14b:adf49d85cf9825a2386d91eccd910dbfe44e2499`        |
-| [Llava 7B](https://github.com/DevlinRocha/lilypad-llava-7b)               | `"llava:7b"`        | `github.com/DevlinRocha/lilypad-llava-7b:2ee3bf637ce19eff52aa2bd79ad449d70e092119`        |
-| [DeepScaleR 1.5B](https://github.com/DevlinRocha/lilypad-deepscaler-1.5b) | `"deepscaler:1.5b"` | `github.com/DevlinRocha/lilypad-deepscaler-1.5b:226a58eba382de7df176ea51eb2b8317973be49c` |
-| [OpenThinker 7B](https://github.com/DevlinRocha/lilypad-openthinker-7b)   | `"openthinker:7b"`  | `github.com/DevlinRocha/lilypad-openthinker-7b:0504f41d60f7cff74d3568557a998bd1b7d6205f`  |
 
 ### Lilypad Team Modules
 
