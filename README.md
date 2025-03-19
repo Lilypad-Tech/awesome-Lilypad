@@ -31,8 +31,6 @@
 
 A list of modules that can run on the Lilypad Network, provided by the Lilypad team and community.
 
-> The [Lilypad CLI](https://docs.lilypad.tech/lilypad/lilypad-testnet/install-run-requirements) is required to run a module.
-
 ### API Compatible Modules
 
 Modules supported by the Lilypad API are also compatible with our CLI.
