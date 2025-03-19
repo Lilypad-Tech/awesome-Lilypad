@@ -83,12 +83,9 @@ lilypad run github.com/GITHUB_USERNAME/MODULE_REPO:TAG \
   },
   {
   "role": "user",
-  "content": "what is the animal order of the frog?"
+  "content": "what order do frogs belong to?"
   }],
-  "stream": false,
-  "options": {
-    "temperature": 1.0
-  }
+  "temperature": 0.6
 }' | base64 -w 0)"
 ```
 
@@ -113,11 +110,9 @@ curl -X POST "https://anura-testnet.lilypad.tech/api/v1/chat/completions" \
   },
   {
     "role": "user",
-    "content": "what is the animal order of the frog?"
+    "content": "what order do frogs belong to?"
   }],
-  "options": {
-    "temperature": 1.0
-  }
+  "temperature": 0.6
 }'
 ```
 
