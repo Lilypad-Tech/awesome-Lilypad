@@ -12,13 +12,6 @@
 - [Module Boilerplate](https://github.com/Lilypad-Tech/lilypad-module-boilerplate) - A boilerplate for getting started with building a Lilypad module
 - [Lilypad Discord](https://lilypad.team/discord) - Come ask questions!
 
-## Resource Providers
-
-- [Hardware Requirements](https://docs.lilypad.tech/lilypad/hardware-providers/hardware-requirements) - Hardware requirements for running a Lilypad node
-- [Running a Lilypad node](https://docs.lilypad.tech/lilypad/hardware-providers/run-a-node) - Instructions on how to run a Lilypad node
-- [Running a Lilypad node video](https://www.youtube.com/watch?v=YmOtqOIBQ0k) - A short video walkthrough on how to run a Lilypad node
-- [Lilypad Discord](https://lilypad.team/discord) - Join the Discord and ask questions in the "General" or "i-need-help" channels
-
 ## Developers
 
 - [Lilypad Modules Intro](https://docs.lilypad.tech/lilypad/lilypad-modules/modules-intro)
