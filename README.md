@@ -20,6 +20,14 @@
 - [Run Lilypad on a client](https://blog.lilypadnetwork.org/setting-up-your-lilypad-front-end) - Integrate Lilypad into a frontend to run a SDXL module to generate images
 - [create-lilypad-module](https://docs.lilypad.tech/lilypad/developer-resources/create-lilypad-module) - Scaffolding tool for building Lilypad modules
 
+## Frontends
+
+A list of frontend applications that utilize Lilypad Network, provided by the Lilypad team and community.
+
+| App                                                                | Description                                                              |
+| ------------------------------------------------------------------ | ------------------------------------------------------------------------ |
+| [Sir Croaksworth's Roast DApp](https://roast-app-delta.vercel.app) | Humorous web application that roasts users' cryptocurrency transactions. |
+
 ## Modules
 
 A list of modules that can run on the Lilypad Network, provided by the Lilypad team and community.
