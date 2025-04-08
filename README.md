@@ -157,7 +157,8 @@ Modules from the community have not been tested by the Lilypad team. Run these m
 
 ## Use Cases
 
-- AI Oncologist Agent - AI agent for oncology research and diagnostics
+- [AI learning buddy](https://github.com/jamiebones/ai-learning-buddy) - an AI learning assistant using RAG and the Lilypad Anura inference API
+- [AI Oncologist Agent](https://github.com/mavericb/ai-oncologist) - AI agent for oncology research and diagnostics
   - [Video](https://www.youtube.com/watch?v=5Hq3lUobrN4)
   - [Code](https://github.com/mavericb/ai-oncologist)
 - [Llama3 Chatbot](https://docs.lilypad.tech/lilypad/use-cases/lilypad-llama3-chatbot) - AI conversations powered by Llama 3 on Lilypad
