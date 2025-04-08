@@ -8,9 +8,9 @@
 
 - [FAQs](https://docs.lilypad.tech/lilypad/faqs)
 - [Lilypad docs](https://docs.lilypad.tech/lilypad)
-- [Quick Start](https://docs.lilypad.tech/lilypad/lilypad-milky-way-testnet/quick-start) - Lilypad "Hello World"
+- [Quick Start](https://docs.lilypad.tech/lilypad/quickstart) - Lilypad "Hello World"
 - [Module Boilerplate](https://github.com/Lilypad-Tech/lilypad-module-boilerplate) - A boilerplate for getting started with building a Lilypad module
-- [Lilypad Discord](https://lilypad.team/discord) - Come ask questions!
+- [Lilypad Discord](https://discord.com/invite/ywSEGd3d84) - Come ask questions!
 
 ## Developers
 
