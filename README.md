@@ -34,19 +34,27 @@ A list of modules that can run on the Lilypad Network, provided by the Lilypad t
 
 ### API Compatible Modules
 
-Modules supported by the Lilypad API are also compatible with our CLI.
-
 | Module                                                                      | Model                | Repo                                                                                       |
 | --------------------------------------------------------------------------- | -------------------- | ------------------------------------------------------------------------------------------ |
-| [DeepScaleR 1.5B](https://github.com/DevlinRocha/lilypad-deepscaler-1.5b)   | `"deepscaler:1.5b"`  | `github.com/DevlinRocha/lilypad-deepscaler-1.5b:c078cab5d190fb6ea0e3ea92a33b74935fa7c4bb`  |
-| [DeepSeek R1 7B](https://github.com/DevlinRocha/lilypad-deepseek-r1-7b)     | `"deepseek-r1:7b"`   | `github.com/DevlinRocha/lilypad-deepseek-r1-7b:9775e21b351420be521080b951f833dabcacc5c5`   |
-| [Llava 7B](https://github.com/DevlinRocha/lilypad-llava-7b)                 | `"llava:7b"`         | `github.com/DevlinRocha/lilypad-llava-7b:d85058d4335acb5f7f09d139eca9a009ec69df02`         |
-| [Mistral 7B](https://github.com/DevlinRocha/lilypad-mistral-7b)             | `"mistral:7b"`       | `github.com/DevlinRocha/lilypad-mistral-7b:aac363a81acc8774414dd18a3702fb81af5171a9`       |
-| [OpenThinker 7B](https://github.com/DevlinRocha/lilypad-openthinker-7b)     | `"openthinker:7b"`   | `github.com/DevlinRocha/lilypad-openthinker-7b:97a48dfbdbba14a61557691a5ad0809313e26535`   |
-| [Phi-4 14B](https://github.com/DevlinRocha/lilypad-phi4-14b)                | `"phi4:14b"`         | `github.com/DevlinRocha/lilypad-phi4-14b:ac0008abbd8d50fc3183984672141c22143aaf92`         |
-| [Phi-4 Mini 3.8B](https://github.com/DevlinRocha/lilypad-phi4-14b)          | `"phi4-mini:3.8b"`   | `github.com/DevlinRocha/lilypad-phi4-mini-3.8b:b6d4033ce009eb35686cd18d9cc48501afac774c`   |
-| [Qwen2.5 7B](https://github.com/DevlinRocha/lilypad-qwen2.5-7b)             | `"qwen2.5:7b"`       | `github.com/DevlinRocha/lilypad-qwen2.5-7b:8d50d99731215350218097ad3313f668ebde8933`       |
-| [Qwen2.5 Coder 7B](https://github.com/DevlinRocha/lilypad-qwen2.5-coder-7b) | `"qwen2.5-coder:7b"` | `github.com/DevlinRocha/lilypad-qwen2.5-coder-7b:c5ea2904d2ec02d397de16dc96f74e0ff4b0d9b8` |
+| [DeepScaleR 1.5B](https://github.com/Lilypad-Tech/lilypad-deepscaler-1.5b)   | `"deepscaler:1.5b"`  | `github.com/Lilypad-Tech/lilypad-deepscaler-1.5b`  |
+| [DeepSeek R1 7B](https://github.com/Lilypad-Tech/lilypad-deepseek-r1-7b)     | `"deepseek-r1:7b"`   | `github.com/Lilypad-Tech/lilypad-deepseek-r1-7b`   |
+| [Llava 7B](https://github.com/Lilypad-Tech/lilypad-llava-7b)                 | `"llava:7b"`         | `github.com/Lilypad-Tech/lilypad-llava-7b`         |
+| [Mistral 7B](https://github.com/Lilypad-Tech/lilypad-mistral-7b)             | `"mistral:7b"`       | `github.com/Lilypad-Tech/lilypad-mistral-7b`       |
+| [OpenThinker 7B](https://github.com/Lilypad-Tech/lilypad-openthinker-7b)     | `"openthinker:7b"`   | `github.com/Lilypad-Tech/lilypad-openthinker-7b`   |
+| [Phi-4 14B](https://github.com/Lilypad-Tech/lilypad-phi4-14b)                | `"phi4:14b"`         | `github.com/Lilypad-Tech/lilypad-phi4-14b`         |
+| [Phi-4 Mini 3.8B](https://github.com/Lilypad-Tech/lilypad-phi4-14b)          | `"phi4-mini:3.8b"`   | `github.com/Lilypad-Tech/lilypad-phi4-mini-3.8b`   |
+| [Qwen2.5 7B](https://github.com/Lilypad-Tech/lilypad-qwen2.5-7b)             | `"qwen2.5:7b"`       | `github.com/Lilypad-Tech/lilypad-qwen2.5-7b`       |
+| [Qwen2.5 Coder 7B](https://github.com/Lilypad-Tech/lilypad-qwen2.5-coder-7b) | `"qwen2.5-coder:7b"` | `github.com/Lilypad-Tech/lilypad-qwen2.5-coder-7b` |
+| [Gemma 3 4B](https://github.com/Lilypad-Tech/lilypad-gemma3-4b)           | `"gemma3:4b"`        | `github.com/Lilypad-Tech/lilypad-gemma3-4b`           |
+| [Gemma 3 27B](https://github.com/Lilypad-Tech/lilypad-gemma3-27b)         | `"gemma3:27b"`       | `github.com/Lilypad-Tech/lilypad-gemma3-27b`          |
+| [LLaMA 3.1 8B](https://github.com/kelindi/lilypad-ollama)                 | `"llama3.1:8b"`      | `github.com/kelindi/lilypad-ollama`                   |
+| [LLaMA 3.3 70B](https://github.com/Lilypad-Tech/lilypad-llama3.3-70b)     | `"llama3.3:70b"`     | `github.com/Lilypad-Tech/lilypad-llama3.3-70b`        |
+| [Qwen 3 14B](https://github.com/Lilypad-Tech/lilypad-qwen3-14b)           | `"qwen3:14b"`        | `github.com/Lilypad-Tech/lilypad-qwen3-14b`           |
+| [Nomic Embed Text](https://github.com/Lilypad-Tech/lilypad-nomic-embed-text) | `"nomic-embed-text"` | `github.com/Lilypad-Tech/lilypad-nomic-embed-text` |
+| [SDXL Turbo](https://github.com/Lilypad-Tech/module-sdxl)             | `"sdxl-turbo"`       | `github.com/Lilypad-Tech/module-sdxl`       |
+| [W.A.N. 2.1](https://github.com/hollygrimm/module-wan2.1)                 | `"wan2.1"`           | `github.com/hollygrimm/module-wan2.1`           |
+| [Kokoro TTS](https://github.com/Lilypad-Tech/lilypad-kokoro-audio-module)            | `"kokoro"`           | `github.com/Lilypad-Tech/lilypad-kokoro-audio-module`       |
+
 
 <details>
   <summary>Use With Our API</summary>
